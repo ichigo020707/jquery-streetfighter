@@ -1,3 +1,9 @@
+
+@font-face {
+	font-family: "glober";
+	src: url('../glober-bold-webfont.ttf');
+}
+
 body {
 	background-color: black;
 }
@@ -14,12 +20,12 @@ body {
 	float: left;
 }
 
-.ryu-ready, .ryu-still, .ryu-throwing {
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
 	width: 659px;
 	height: 494px;
 }
 
-.ryu-ready, .ryu-throwing {
+.ryu-ready, .ryu-throwing, .ryu-cool {
 	display: none;
 }
 
@@ -33,6 +39,10 @@ body {
 
 .ryu-throwing {
 	background-image: url('../images/ryu-throwing-hadouken.png');
+}
+
+.ryu-cool {
+	background-image: url('../images/ryu-cool.gif');
 }
 
 .hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
@@ -50,4 +60,21 @@ body {
 	float: left;
 }
 
+.para1, .para2 {
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	font-family: "glober";
+	font-size: 2em;
+}
+
+.para1 {
+	top: 150px;
+	left: 800px;
+}
+
+.para2 {
+	top: 275px;
+	left: 1100px;
+}
 
