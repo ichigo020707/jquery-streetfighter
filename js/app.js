@@ -38,6 +38,11 @@ $(document).ready(function() {
 	});
 	$('html').on('keyup', function(event) {
 		if (event.which == 88) {
+			//pause stops the music when x is released
+			$('#hadouken-cool')[0].pause();
+			//load reloads the music so that the song 
+			//starts from the beginning when x is pressed again
+			$('#hadouken-cool')[0].load();
 			$('.ryu-cool').hide();
 			$('.ryu-still').show();
 		}
@@ -52,7 +57,8 @@ function playHadouken() {
 
 function playCool() {
 	$('#hadouken-cool')[0].volume = 0.5;
-	$('#hadouken-cool')[0].load();
+	//commenting out next line let song play correctly
+	//$('#hadouken-cool')[0].load();
 	$('#hadouken-cool')[0].play();
 }
 
